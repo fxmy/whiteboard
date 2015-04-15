@@ -74,7 +74,7 @@ handle_cast(_Msg, State) ->
 	    {noreply, State}.
 
 handle_info({'DOWN', Ref, process, _Pid, _}, S = #state{refs=Refs}) ->
-	    io:format("received down msg~n"),
+	    %%io:format("received down msg~n"),
 	    case gb_sets:is_element(Ref, Refs) of
 		        true ->
 			            handle_down_worker(Ref, S);
