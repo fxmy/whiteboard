@@ -63,7 +63,7 @@ handle_info({start, Dir}, State, Data) ->
 	{next_state, State, Data}.
 
 terminate(_Reason, _StateName, _State) ->
-    ok.
+	init:stop().
 
 code_change(_OldVsn, StateName, State, _Extra) ->
     {ok, StateName, State}.
