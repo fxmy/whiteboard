@@ -1,8 +1,8 @@
 LLDP-V2-TC-MIB DEFINITIONS ::= BEGIN
 IMPORTS
     MODULE-IDENTITY,
-    Unsigned32,
-    org
+    Unsigned32
+--    org
         FROM SNMPv2-SMI
     TEXTUAL-CONVENTION
         FROM SNMPv2-TC;
